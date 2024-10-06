@@ -1,0 +1,56 @@
+
+{% load static %}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'lightbox.min.csss' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lightbox.min.css' %}">
+    <script src="{% static 'js/lightbox-plus-jquery.min.js' %}" type="text/javascript"></script>
+    
+    
+    <style>
+     *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.gallery{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+.gallery img{
+    width: 300px;
+    height:auto;
+    transition: 0.5s;
+}
+.gallery img:hover{
+    filter: grayscale(80%);
+    transform: scale(1.02);
+}
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+        <div class="gallery" padding-top="40px"; >
+        <a href="{% static 'images/Ninja1.jpg' %}" data-lightbox='mygallery' data-title="Image"><img src="{% static 'images/Ninja1.jpg' %}"></a>
+        <a href="{% static 'images/Ninja2.jpg' %}" data-lightbox='mygallery' data-title="Image"><img src="{% static 'images/Ninja2.jpg' %}"></a>
+        <a href="{% static 'images/Ninja3.jpg' %}" data-lightbox='mygallery' data-title="Image"><img src="{% static 'images/Ninja3.jpg' %}"></a>
+        <a href="{% static 'images/Ninja4.jpg' %}" data-lightbox='mygallery' data-title="Image"><img src="{% static 'images/Ninja4.jpg' %}"></a>
+        <a href="{% static 'images/Ninja5.jpg' %}" data-lightbox='mygallery' data-title="Image"><img src="{% static 'images/Ninja5.jpg' %}"></a>
+        <a href="{% static 'images/Ninja6.jpg' %}" data-lightbox='mygallery' data-title="Image"><img src="{% static 'images/Ninja6.jpg' %}"></a>
+        
+        
+    </div>
+
+</body>
+</html>
